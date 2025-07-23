@@ -12,7 +12,7 @@ ob_start();
    $data = json_decode(file_get_contents('php://input'), true);
    if ($data) {
       
-      require_once("newutil2.php");	
+      
       if ($data['Mode'] == 'getAction') { getActionV3($data); }
 	  if ($data['Mode'] == 'getLastAction') { getActionV3($data); }
       return;
