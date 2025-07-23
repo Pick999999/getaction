@@ -39,11 +39,12 @@ $clsStep2 = new AdvancedIndicators();
 $result = $clsStep1->calculateIndicators($candleData);
 $result2= $clsStep2->calculateAdvancedIndicators($result);
 //$result2= Final_AdvanceIndy($result2)  ;
-
+/*
 $stAnaly = JSON_ENCODE($result2, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT) ;
 $myfile = fopen("AnalyDataBig.json", "w") or die("Unable to open file!");
 fwrite($myfile, $stAnaly);
 fclose($myfile); 
+*/
 
 $macdThershold = 0.1 ; $lastMacdHeight = 0 ;
 $sAr = array(); $winCon = 0 ; $lossCon = 0 ; $LotNo = 0 ;
