@@ -11,8 +11,8 @@ ob_start();
    error_reporting(E_ALL);   
    $data = json_decode(file_get_contents('php://input'), true);
    if ($data) {
-      $newUtilPath = '/home/thepaper/domains/thepapers.in/private_html/deriv/';
-      require_once($newUtilPath ."newutil2.php");	
+      
+      require_once("newutil2.php");	
       if ($data['Mode'] == 'getAction') { getActionV3($data); }
 	  if ($data['Mode'] == 'getLastAction') { getActionV3($data); }
       return;
@@ -155,3 +155,4 @@ function getCandleData2() {
 
 ?>
 
+ 
