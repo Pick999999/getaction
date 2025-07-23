@@ -32,7 +32,7 @@ if ($data=='') {
   $candleData = $data['candles'] ;
 }
 */
-$candleData = getCandleData2() ;
+//$candleData = getCandleData2() ;
 require_once( 'phpCandlestickIndy.php');
 $clsStep1 = new TechnicalIndicators();   
 
@@ -149,7 +149,7 @@ function getCandleData2() {
  
 
  
- echo 'Len=' . count($candleDataB) . '<br>';
+ //echo 'Len=' . count($candleDataB) . '<br>';
  return $candleDataB ;
 
 } // end function
