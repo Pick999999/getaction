@@ -25,12 +25,14 @@ function getActionV3($data) {
 
 
 require_once('sortGetAction.php');
+/*
 if ($data=='') {
   $candleData = getCandleData2() ;
 } else {
   $candleData = $data['candles'] ;
 }
-
+*/
+$candleData = getCandleData2() ;
 require_once( 'phpCandlestickIndy.php');
 $clsStep1 = new TechnicalIndicators();   
 
