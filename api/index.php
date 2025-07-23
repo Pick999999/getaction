@@ -132,7 +132,7 @@ echo  $s;
 function getCandleData2() {
 
  
- $sFileName =  __DIR__ . 'rawData.json';
+ $sFileName =  __DIR__ . '/rawData.json';
  $st = '';
  $file = fopen($sFileName,"r");
  while(! feof($file))  {
